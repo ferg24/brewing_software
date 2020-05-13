@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/standard.css">
+    <link rel="stylesheet" href="resources/css/start-up.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet">
     <title>Brewery Set Up</title>
 </head>
@@ -24,7 +24,7 @@
         <p>This is the brewery construction page. You will not need to visit this page often. Below is a form asking you about the size and style of your brewery. This will help BeerTech to calculate recipies.</p>
     </article>
         <br>
-        <section id="brewery-settings">
+        <section class="brewery-settings">
             <form  action=".Settings.html" method="POST">
                 <p class="bs-questions">What style of mash do you have?</p>
                 <br>
@@ -49,52 +49,20 @@
                 <br>
                 <p class="bs-questions">What is the largest working capacity for your Mash?</p>
                 <br>
-                <input id="mash-max-litres" type="number" min="100" value="1000" required>
+                <input id="mash-max-litres" type="number"class="fv-capacity" min="100" value="1000" required>
                 <label for="mash-max-litres">litres</label>
                 <br>
                 <br>
                 <p class="bs-questions">What is the largest working capacity for your Copper?</p>
                 <br>
-                <input id="copper-max-litres" type="number" min="100" value="1000" required>
+                <input id="copper-max-litres" type="number"class="fv-capacity" min="100" value="1000" required>
                 <label for="mash-max-litres">litres</label>
                 <br>
-                <br>
-                <p class="bs-questions">How many fermenting vessels does your brewery have?</p>
-                <br>
-                <input id="fv-amount" type="number" value="1" required>
-                <br>
-                <br>
-                <p class="bs-questions">What formats do you package into?</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Keg:</td>
-                            <td>Cask:</td>
-                            <td>Small Pack:</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><input type="checkbox" name="packaging-format" id="30-litre-keg" value="30-litre-keg" class="packaging-checkbox"><label for="30-litre-keg">30 litre keg</label></td>
-                            <td><input type="checkbox" name="packaging-format" id="40-litre-cask" value="40-litre-cask" class="packaging-checkbox"><label for="40-litre-cask">40 litre cask</label></td>                                
-                            <td><input type="checkbox" name="packaging-format" id="330-cans" value="330-cans" class="packaging-checkbox"><label for="330-cans">330ml Cans</label></td>                                
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="packaging-format" id="50-litre-keg" value="50-litre-keg" class="packaging-checkbox"><label for="50-litre-keg">50 litre keg</label></td>
-                            <td><input type="checkbox" name="packaging-format" id="80-litre-cask" value="80-litre-cask" class="packaging-checkbox"><label for="80-litre-cask">80 litre cask</label></td>   
-                            <td><input type="checkbox" name="packaging-format" id="330-bottles" value="330-bottles" class="packaging-checkbox"><label for="330-bottles">330ml Bottles</label></td>
-                        </tr>
-                        <tr>
-                            <td><input type="checkbox" name="packaging-format" id="20-litre-keg" value="20-litre-keg" class="packaging-checkbox"><label for="20-litre-keg">20 litre keg</label></td>
-                            <td><input type="checkbox" name="packaging-format" id="20-litre-cask" value="20-litre-cask" class="packaging-checkbox"><label for="20-litre-cask">20 litre cask</label></td>   
-                            <td><input type="checkbox" name="packaging-format" id="440-cans" value="440-cans" class="packaging-checkbox"><label for="440-cans">440ml Cans</label></td>
-                        </tr>
-                    </tbody>
-                </table>
                 <br>
                 <br>
                 <input id="submit-button" type="submit" value="Save Changes" max="300" min="1">
             </form>
         </section>
+            <script src="resources/Scripts/start-up.js"></script>
 </body>
 </html>

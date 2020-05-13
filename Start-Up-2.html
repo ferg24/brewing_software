@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/start-up.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet">
+    <title>Brewery Set Up</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <img id="corner-logo" src="./resources/Images/Logo.svg" alt="BeerTech Logo">
+        <ul>
+            <li class="nav-item">Dashboard</li>
+            <li class="nav-item">Current Brew</li>
+            <li class="nav-item">Packaging</li>
+            <li class="nav-item">Schedule</li>
+            <li class="nav-item">Cellar</li>
+            <li class="nav-item">Settings</li>
+        </ul>
+    </nav>
+    <br>
+    <article id="introduction">
+        <br>
+        <p>Next up, we need to know about your cellar and packaging. Please tell us how many fermenting vessels you have and also how many conditioning/bright beer tanks you have. Then we need to know what format you package into. We will use this information to design your cellar dashboard and packaging screens.</p>
+    </article>
+    <section class="brewery-settings">
+        <form  action=".Settings.html" method="POST">
+            <p class="bs-questions">How many fermenting vessels does your cellar have?</p>
+            <br>
+            <input type="number" id="fv-numbers" name="fv-numbers" min="1">
+            <br>
+            <p class="bs-questions">How many conditioning/bright beer tanks do you have? And what are they used for? If you only use your fermenting vessels for conditioning and packaging beers then please enter 0.</p>
+            <br>
+            <input type="number" id="ct-numbers" name="ct-numbers" min="0">
+            <p class="bs-questions">What formats do you package into?</p>
+            <table id="packaging-format-checkboxes">
+                <thead>
+                    <tr>
+                        <td>Keg:</td>
+                        <td>Cask:</td>
+                        <td>Cans:</td>
+                        <td>Bottles:</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="packaging-format" id="30-litre-keg" value="30-litre-keg" class="packaging-checkbox"><label for="30-litre-keg">30 litre keg</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="40-litre-cask" value="40-litre-cask" class="packaging-checkbox"><label for="40-litre-cask">40 litre cask</label></td>                                
+                        <td><input type="checkbox" name="packaging-format" id="330-cans" value="330-cans" class="packaging-checkbox"><label for="330-cans">330ml Cans</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="330-bottles" value="330-bottles" class="packaging-checkbox"><label for="330-bottles">330ml Bottles</label></td>                          
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="packaging-format" id="50-litre-keg" value="50-litre-keg" class="packaging-checkbox"><label for="50-litre-keg">50 litre keg</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="80-litre-cask" value="80-litre-cask" class="packaging-checkbox"><label for="80-litre-cask">80 litre cask</label></td>   
+                        <td><input type="checkbox" name="packaging-format" id="440-cans" value="440-cans" class="packaging-checkbox"><label for="440-cans">440ml Cans</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="660-bottles" value="660-bottles" class="packaging-checkbox"><label for="600-bottles">660ml Bottles</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="packaging-format" id="20-litre-keg" value="20-litre-keg" class="packaging-checkbox"><label for="20-litre-keg">20 litre keg</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="20-litre-cask" value="20-litre-cask" class="packaging-checkbox"><label for="20-litre-cask">20 litre cask</label></td>   
+                        <td><input type="checkbox" name="packaging-format" id="500-cans" value="500-cans" class="packaging-checkbox"><label for="500-cans">500ml Cans</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="500-bottles" value="500-bottls" class="packaging-checkbox"><label for="500-bottles">500ml Bottles</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="packaging-format" id="10-litre-keg" value="10-litre-keg" class="packaging-checkbox"><label for="10-litre-keg">10 litre keg</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="10-litre-cask" value="10-litre-cask" class="packaging-checkbox"><label for="10-litre-cask">10 litre cask</label></td>   
+                        <td><input type="checkbox" name="packaging-format" id="568-cans" value="568-cans" class="packaging-checkbox"><label for="568-cans">568ml Cans</label></td>
+                        <td><input type="checkbox" name="packaging-format" id="568-bottles" value="568-bottles" class="packaging-checkbox"><label for="568-bottles">568ml Bottles</label></td>
+                    </tr>
+                </tbody>
+            </table>    
+        </form>
+    </section>
+</body>
